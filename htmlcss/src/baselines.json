@@ -1,0 +1,35 @@
+{
+    "https://a.com | https://b.com": {
+        "distance_ratio": 1.382052727897511,
+        "https://b.com": {
+            "aspect": 1.0749104781719068
+        },
+        "https://a.com": {
+            "aspect": 1.0026837739407874
+        }
+    },
+    "Bilinmeyen QR | https://b.com": {
+        "distance_ratio": 1.1497977221386533,
+        "Bilinmeyen QR": {
+            "aspect": 1.1680571431932014
+        },
+        "https://b.com": {
+            "aspect": 1.0143997076697027
+        }
+    },
+    "Bilinmeyen QR | https://a.com": {
+        "distance_ratio": 1.0233128617188998,
+        "https://a.com": {
+            "aspect": 1.6287759183336585
+        },
+        "Bilinmeyen QR": {
+            "aspect": 0.8665161403095046
+        }
+    },
+    "Bilinmeyen QR | Bilinmeyen QR": {
+        "distance_ratio": 0.3339387011281716,
+        "Bilinmeyen QR": {
+            "aspect": 1.0026732276633723
+        }
+    }
+}
