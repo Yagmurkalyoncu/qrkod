@@ -1,0 +1,50 @@
+{
+    "oto_x": {
+        "name": "X Otomasyonu",
+        "kabin_tipi": "Sürgülü_Tip_A",
+        "fiziksel_parametreler": {
+            "kabin_yuksekligi_m": 2.5,
+            "qr_koordinatlari": {
+                "x": 10,
+                "y": 0,
+                "z": 2.15
+            }
+        },
+        "analiz_toleranslari": {
+            "mesafe_toleransi": 0.05,
+            "aci_toleransi": 0.2
+        }
+    },
+    "oto_y": {
+        "name": "Y Otomasyonu",
+        "kabin_tipi": "Menteşeli_Tip_B",
+        "fiziksel_parametreler": {
+            "kabin_yuksekligi_m": 2.15,
+            "qr_koordinatlari": {
+                "x": 5,
+                "y": 0,
+                "z": 1.6
+            }
+        },
+        "analiz_toleranslari": {
+            "mesafe_toleransi": 0.08,
+            "aci_toleransi": 0.15
+        }
+    },
+    "oto_z": {
+        "name": "Z Otomasyonu ",
+        "kabin_tipi": "İçe_Katlanır_Tip_C",
+        "fiziksel_parametreler": {
+            "kabin_yuksekligi_m": 3.0,
+            "qr_koordinatlari": {
+                "x": 20,
+                "y": 0,
+                "z": 2.8
+            }
+        },
+        "analiz_toleranslari": {
+            "mesafe_toleransi": 0.1,
+            "aci_toleransi": 0.25
+        }
+    }
+}

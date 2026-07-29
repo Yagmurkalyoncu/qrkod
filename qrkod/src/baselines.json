@@ -1,0 +1,21 @@
+{
+    "https://b.com | https://a.com": {
+        "distance_ratio": 2.449240001793927,
+        "qr1_aspect": 1.0129050744006558,
+        "qr2_aspect": 1.0538141274568842,
+        "qr1_width": 68.12789574551743,
+        "qr2_width": 70.62929705626418,
+        "dynamic_dist_tol": 0.05,
+        "dynamic_aspect_tol": 0.2
+    },
+    "https://a.com | https://b.com": {
+        "distance_ratio": 2.76457964549151,
+        "qr1_aspect": 0.9815520360504563,
+        "qr2_aspect": 1.0372511519665604,
+        "qr1_width": 89.27925861210228,
+        "qr2_width": 86.75395885285926,
+        "dynamic_dist_tol": 0.018840467288254042,
+        "dynamic_aspect_tol": 0.1,
+        "dynamic_depth_tol": 0.5
+    }
+}

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="camera-tab" class="tab-content active">
+            
+    <div class="metrics-row">
+        <div class="metric-card">
+            <span class="metric-title">GÜNCEL DURUM</span>
+            <h1 id="live-status" class="status-text unknown">BEKLENİYOR</h1>
+            <span class="metric-desc">Anlık Sensör Analizi</span>
+        </div>
+        <div class="metric-card">
+            <span class="metric-title">AKTİF OTOMASYON HEDEFİ</span>
+            <h2 id="auto-id">Seçilmedi</h2>
+            <span class="metric-desc">Robotun Navigasyon Hedefi</span>
+        </div>
+        <div class="metric-card">
+            <span class="metric-title">KABİN TİPİ</span>
+            <h2 id="cabinet-type">Bilinmiyor</h2>
+            <span class="metric-desc">Fiziksel Kabin Türü</span>
+        </div>
+        <div class="metric-card">
+            <span class="metric-title">GÖRÜNEN QR SAYISI</span>
+            <h2 id="qr-count">0</h2>
+            <span class="metric-desc">Kameradaki Referanslar</span>
+        </div>
+    </div>
+
+    <div class="main-screen-layout">
+        <!-- CAMERA VIEW -->
+        <div class="card camera-card">
+            <div class="card-header">
+                <h3>Canlı Otonom Kamera Yayını</h3>
+                <div class="live-indicator"></div>
+            </div>
+            <div class="camera-wrapper">
+                
+                <!-- STANDBY OVERLAY (CSS BASED) -->
+                <div id="standby-overlay" class="standby-overlay hidden">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21.17 3.06a1.14 1.14 0 0 0-1.57-.42L4.03 12.18a1.14 1.14 0 0 0 .42 2l15.57-9.54a1.14 1.14 0 0 0 .15-1.58z"></path>
+                        <path d="M2.83 20.94a1.14 1.14 0 0 0 1.57.42L19.97 11.82a1.14 1.14 0 0 0-.42-2L3.98 19.36a1.14 1.14 0 0 0-.15 1.58z"></path>
+                    </svg>
+                    <h2>SİSTEM BEKLEMEDE</h2>
+                    <p>Kamera  şu anda duraklatıldı.</p>
+                </div>
+
+                <img src="/video_feed" alt="Kamera Yayını" id="video-stream">
+            </div>
+        </div>
+
+        <!-- LIVE CONTROLS -->
+        <div class="live-controls">
+            <h3>Canlı Denetim Ayarları</h3>
+            <p>Kameraya yansıyan tolerans limitlerini anlık olarak buradan değiştirebilirsiniz.</p>
+            
+            <div class="input-group">
+                <label>MESAFE TOLERANSI (Sürgülü)</label>
+                <input type="number" id="live-dist-tol" step="0.01" min="0.01" value="0.05">
+            </div>
+
+            <div class="input-group">
+                <label>AÇI TOLERANSI (Menteşeli)</label>
+                <input type="number" id="live-aspect-tol" step="0.01" min="0.01" value="0.20">
+            </div>
+
+            <div class="input-group">
+                <label>DERİNLİK TOLERANSI (Z-Ekseni)</label>
+                <input type="number" id="live-depth-tol" step="0.01" min="0.01" value="0.08">
+            </div>
+
+            <div class="control-actions">
+                <button id="btn-toggle-analysis" class="btn-primary active">
+                    DENETİMİ BİTİR
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
