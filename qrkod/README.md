@@ -1,6 +1,3 @@
-# Robotik Otomasyon Müdürlüğü - Kamera Denetim Sistemi
-
-Bu proje, bir bilgisayara bağlı kamera üzerinden QR kodların boyut, mesafe ve açı değişimlerini analiz ederek "Kapak Açık" veya "Kapak Kapalı" durumlarını tespit eden gerçek zamanlı (MJPEG) bir bilgisayarlı görü (computer vision) web uygulamasıdır.
 
 ## Proje Gereksinimleri
 
